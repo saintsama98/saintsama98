@@ -2,7 +2,7 @@
   <img src="assets/banner.jpg" alt="adiii.eth" width="100%">
 </p>
 
-<h1 align="center">Aditya Biradar</h1>
+<h1 align="center">adiii</h1>
 
 <p align="center">
   <b>Smart Contract Engineer | Protocol Research</b><br>
@@ -16,7 +16,7 @@
   <a href="mailto:adiiiresearch@gmail.com">Email</a>
 </p>
 
-I build the financial layer that sits on top of onchain credit: the vaults that hold it, the tranches that decide who is paid first and who absorbs a loss, and the pricing and risk rules behind both. I am a core smart contract engineer at Blok Capital, the builder of Morrow, and the author of long form research on tranching and vault design. Every mechanism I ship starts as a written model, is checked against an independent reference implementation, and is tested with unit, fuzz, invariant, fork and symbolic checks.
+I build the financial layer that sits on top of onchain credit: the vaults that hold it, the tranches that decide who is paid first and who absorbs a loss, and the pricing and risk rules behind both. I was one of the founding engineers at Blok Capital, an onchain portfolio management protocol. I have shipped several onchain capital structures as early beta builds, and designed and built Morrow, the first risk product on top of Morpho Midnight, now in early beta. I believe every product should stand on a strong suite of financial modelling, formal verification and Foundry based testing before it ships.
 
 <br>
 
