@@ -72,9 +72,12 @@ Tranching protects a senior holder from losses, but not from waiting to get out.
 | Area | Tools |
 | :-- | :-- |
 | **Languages** | Solidity, Go, Python |
-| **Testing and verification** | Foundry (unit, fuzz, invariant, fork), Halmos, exact arithmetic reference models |
+| **Testing** | Foundry (unit, fuzz, invariant, fork), Echidna, Medusa, mutation and differential testing |
+| **Analysis and verification** | Slither, Aderyn, Halmos symbolic execution (Z3, CVC5, Bitwuzla, Yices), exact arithmetic reference models |
 | **Standards** | ERC-4626, ERC-7540, ERC-7887, EIP-2535, ERC-7201, UUPS |
-| **Protocols** | Morpho Blue and Midnight, Pendle, Aave, Compound, Chainlink, Zama fhEVM |
+| **Lending and yield** | Morpho (Blue, Midnight, Vaults), Pendle, Aave, Compound, Ethena, Sky, Spark |
+| **Credit and structured products** | Centrifuge, Maple, Pareto, Securitize, Strata, Royco |
+| **Infrastructure** | Chainlink, Zama |
 
 <br>
 
