@@ -22,7 +22,7 @@ I build the financial layer that sits on top of onchain credit: the vaults that 
 
 ## Experience
 
-### Blok Capital &nbsp;|&nbsp; Smart Contract Engineer, Core Protocol
+### Blok Capital &nbsp;|&nbsp; Founding Engineer
 
 Core engineer on [Blok Capital](https://github.com/BLOKCapital)'s v1 protocol, a decentralized wealth management system of per user vaults built as EIP-2535 Diamonds and composed from a curated registry of protocol integration facets.
 
