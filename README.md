@@ -38,7 +38,7 @@ Core contracts: [BLOKCapital/blokc-v1-core](https://github.com/BLOKCapital/blokc
 
 Morpho Midnight gave onchain credit fixed maturities. Morrow gives that credit a capital structure. One pool of fixed rate loans is split into a senior claim, paid first up to a fixed amount, and a junior claim that takes the first loss and keeps the residual. Lenders hold only srUSDC or jrUSDC, while capital runs through dated series that settle at maturity and roll automatically into the next.
 
-Seniority cannot exist inside a Midnight market, where every lender shares losses pro rata, so Morrow builds it above the market. The premium senior pays junior is priced per series along a kinked curve that moves with the size of the junior cushion. The waterfall, the pricing and every rounding direction are checked against an independent integer reference model, proven symbolically with Halmos within stated bounds, and stress tested on a Base mainnet fork through replayed crashes, depegs, defaults and bad debt.
+Seniority cannot exist inside a Midnight market, where every lender shares losses pro rata, so Morrow builds it above the market. The premium senior pays junior is priced per series along a kinked curve that moves with the size of the junior cushion. The waterfall, the pricing and every rounding direction are checked against an independent integer reference model and stress tested on a Base mainnet fork through replayed crashes, depegs, defaults and bad debt. The rounding helpers and batch price order are proven symbolically with Halmos, and the [verification record](https://github.com/saintsama98/Morrow-Finance-Gob/blob/main/docs/verification.md) states what is proven and what is fuzzed.
 
 [Repository](https://github.com/saintsama98/Morrow-Finance-Gob) &nbsp;|&nbsp; [Announcement](https://x.com/0xPutAmaterasu/status/2107828803259244663) &nbsp;|&nbsp; [The arithmetic behind tranching](https://x.com/0xPutAmaterasu/status/2102057353072038146)
 
@@ -85,4 +85,4 @@ Tranching protects a senior holder from losses, but not from waiting to get out.
 
 Open to engineering and research roles in onchain credit, vaults and structured products.
 
-[X: @0xPutAmaterasu](https://x.com/0xPutAmaterasu) &nbsp;|&nbsp; [adiii.eth.limo](https://adiii.eth.limo) &nbsp;|&nbsp; [adiiiresearch@gmail.com](mailto:adiiiresearch@gmail.com)
+[X: @0xPutAmaterasu](https://x.com/0xPutAmaterasu) &nbsp;|&nbsp; [adiii.eth.limo](https://adiii.eth.limo) &nbsp;|&nbsp; [adiiiresearch@gmail.com](mailto:adiiiresearch@gmail.com) &nbsp;|&nbsp; [biradaraditya9712@gmail.com](mailto:biradaraditya9712@gmail.com)
