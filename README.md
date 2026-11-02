@@ -16,7 +16,7 @@
   <a href="mailto:adiiiresearch@gmail.com">Email</a>
 </p>
 
-I build the financial layer that sits on top of onchain credit: the vaults that hold it, the tranches that decide who is paid first and who absorbs a loss, and the pricing and risk rules behind both. I was one of the founding engineers at Blok Capital, an onchain portfolio management protocol. I have shipped several onchain capital structures as early beta builds, and designed and built Morrow, the first risk product on top of Morpho Midnight, now in early beta. I believe every product should stand on a strong suite of financial modelling, formal verification and Foundry based testing before it ships.
+I build the financial layer that sits on top of onchain credit: the vaults that hold it, the tranches that decide who is paid first and who absorbs a loss, and the pricing and risk rules behind both. I was one of the founding engineers at Blok Capital, an onchain portfolio management protocol. I have built several onchain capital structures as research builds, and designed and built Morrow, a risk product on top of Morpho Midnight, which is not deployed. I believe every product should stand on a strong suite of financial modelling, formal verification and Foundry based testing before it ships.
 
 <br>
 
@@ -36,7 +36,7 @@ Core contracts: [BLOKCapital/blokc-v1-core](https://github.com/BLOKCapital/blokc
 
 **Dated senior and junior credit tranches on Morpho Midnight, behind two vault tokens.**
 
-Morpho Midnight gave onchain credit fixed maturities. Morrow gives that credit a capital structure. One pool of fixed rate loans is split into a senior claim, paid first up to a fixed amount, and a junior claim that takes the first loss and keeps the residual. Lenders hold only srUSDC or jrUSDC, while capital runs through dated series that settle at maturity and roll automatically into the next.
+Morpho Midnight gave onchain credit fixed maturities. Morrow gives that credit a capital structure. One pool of fixed rate loans is split into a senior claim, paid first up to a fixed amount, and a junior claim that takes the first loss and keeps the residual. Lenders hold only srUSDC or jrUSDC, while capital runs through dated series that settle at maturity and roll into the next.
 
 Seniority cannot exist inside a Midnight market, where every lender shares losses pro rata, so Morrow builds it above the market. The premium senior pays junior is priced per series along a kinked curve that moves with the size of the junior cushion. The waterfall, the pricing and every rounding direction are checked against an independent integer reference model and stress tested on a Base mainnet fork through replayed crashes, depegs, defaults and bad debt. The rounding helpers and batch price order are proven symbolically with Halmos, and the [verification record](https://github.com/saintsama98/Morrow-Finance-Gob/blob/main/docs/verification.md) states what is proven and what is fuzzed.
 
