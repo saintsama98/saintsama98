@@ -2,7 +2,7 @@
   <img src="assets/banner.jpg" alt="adiii.eth" width="100%">
 </p>
 
-<h1 align="center">adiii</h1>
+<h1 align="center">About adiii</h1>
 
 <p align="center">
   <b>Smart Contract Engineer | Protocol Research</b><br>
